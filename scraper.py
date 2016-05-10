@@ -29,4 +29,4 @@ header = {
 s = requests.session()
 r = s.get(url=construct_ajax_url(BASE_CURRENCY,QUOTE_CURRENCY),headers=header)
 r.status_code
-r.json()['data']['chart_data'][-1]
+r.json()['data']['bid_ask_data']['bid']
